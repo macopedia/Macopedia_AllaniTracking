@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+            <block type="core/text" name="allanitracking-js" ifconfig="macopedia_allanitracking/general/enable">
+                <action method="setText" ifconfig="macopedia_allanitracking/general/enable">>
+                    <text><![CDATA[<script type="text/javascript" src="//allani.pl/assets/tracker_async.js"></script>]]></text>
+                </action>
+            </block>
+        </reference>
+    </default>
+    <checkout_onepage_success>
+        <block type="core/template" name="allanitracking" template="macopedia/allanitracking.phtml" />
+        <reference name="before_body_end">
+                <action method="append" ifconfig="macopedia_allanitracking/general/enable"><block>allanitracking</block></action>
+        </reference>
+    </checkout_onepage_success>
+</layout>

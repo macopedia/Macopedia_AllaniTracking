@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Macopedia_AllaniTracking>
+            <version>1.0.0</version>
+        </Macopedia_AllaniTracking>
+    </modules>
+    <global>
+        <helpers>
+            <macopedia_allanitracking>
+                <class>Macopedia_AllaniTracking_Helper</class>
+            </macopedia_allanitracking>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <macopedia_allanitracking>
+                    <file>macopedia/allanitracking.xml</file>
+                </macopedia_allanitracking>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <macopedia_allanitracking>
+            <general>
+                <enable>0</enable>
+            </general>
+        </macopedia_allanitracking>
+    </default>
+</config>

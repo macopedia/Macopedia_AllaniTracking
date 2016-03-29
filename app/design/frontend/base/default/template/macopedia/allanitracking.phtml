@@ -1,0 +1,7 @@
+<?php $_helper = Mage::helper('macopedia_allanitracking'); ?>
+<?php $_orderInfo = $_helper->getOrderInfo(); ?>
+
+<script type="text/javascript">
+    window.AllaniTransactions = window.AllaniTransactions || [];
+    window.AllaniTransactions.push([<?php echo $_orderInfo['product_ids'] ?>], <?php echo $_orderInfo['order_value']; ?>, "<?php echo $_orderInfo['order_id']; ?>");
+</script>
